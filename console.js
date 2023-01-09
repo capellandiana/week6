@@ -4,9 +4,12 @@ let hens = 5
 console.log (roosters - hens)
 
 // easy
-const Jonathan = 8
-const Juan = 4
-    console.log ("The name Juan is shorter that Jonathan by 4 characters")
+const var1 = "Jonathan"
+const var2 = "Juan"
+let shorterName = var1.length < var2.length ? var1 : var2
+let longerName = var1.length > var2.length ? var1 : var2
+let lengthDifference = Math.abs(var1.length - var2.length)
+    console.log (`The name ${shorterName} is shorter that ${longerName} by ${lengthDifference} characters`)
 
 // medium 
 let userInput = prompt("Please enter text here", "ARE YOU SHOUTING");
